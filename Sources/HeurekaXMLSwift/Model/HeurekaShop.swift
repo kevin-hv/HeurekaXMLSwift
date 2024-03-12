@@ -13,6 +13,10 @@ public struct HeurekaShop : Codable, Equatable {
     public enum CodingKeys: String, CodingKey {
         case shopItems = "SHOPITEM"
     }
+    
+    public init(shopItems: [ShopItem]) {
+        self.shopItems = shopItems
+    }
 }
 
 public struct ShopItem : Codable, Equatable {
