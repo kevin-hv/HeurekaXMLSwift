@@ -292,7 +292,7 @@ public struct Param : Codable, Equatable {
 }
 
 public struct Delivery : Codable, Equatable {
-    let deliveryId : SupportedDeliveryId
+    let deliveryId : String
     let deliveryPrice : String
     let deliveryPriceCod: String
     
@@ -374,46 +374,4 @@ public struct ExtendedWarranty : Codable, Equatable {
             desc: desc
         )
     }
-}
-
-public enum SupportedDeliveryId : String, Codable, Equatable {
-    case slovenskaPosta = "SLOVENSKA_POSTA"
-    case dpd = "DPD"
-    case dhl = "DHL"
-    case expresKurier = "EXPRES_KURIER"
-    case gebruderWeiss = "GEBRUDER_WEISS"
-    case geis = "GEIS"
-    case gls = "GLS"
-    case hds = "HDS"
-    case inTime = "INTIME"
-    case ppl = "PPL"
-    case tnt = "TNT"
-    case topTrans = "TOPTRANS"
-    case ups = "UPS"
-    case fedex = "FEDEX"
-    case rabenLogistics = "RABEN_LOGISTICS"
-    case sds = "SDS"
-    case sps = "SPS"
-    case oneTwoThreeCourier = "123KURIER"
-    case packetaDomov = "PACKETA_DOMOV"
-    case paletExpress = "PALETEXPRESS"
-    case weDoHome = "WEDO_HOME"
-    case rhenusLogistics = "RHENUS_LOGISTICS"
-    case messenger = "MESSENGER"
-    case slovenskaPostaBalikNaPostu = "SLOVENSKA_POSTA_NAPOSTU_DEPOTAPI"
-    case packeta = "PACKETA"
-    case dpdPickup = "DPD_PICKUP"
-    case woDoPoint = "WEDO_POINT"
-    case balikovo = "BALIKOVO"
-    case glsParcelShop = "GLS_PARCELSHOP"
-    case depo = "DEPO"
-    case alzaPoint = "ALZAPOINT"
-    case dpdBox = "DPD_BOX"
-    case zBox = "Z_BOX"
-    case weDoBox = "WEDO_BOX"
-    case balikoBox = "BALIKOBOX"
-    case glsParcelLocker = "GLS_PARCELLOCKER"
-    case alzaBox = "ALZABOX"
-    case online = "ONLINE"
-    case vlastnaPreprava = "VLASTNA_PREPRAVA"
 }

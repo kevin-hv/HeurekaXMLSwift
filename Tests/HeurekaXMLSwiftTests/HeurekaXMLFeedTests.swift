@@ -37,12 +37,12 @@ final class HeurekaXMLFeedTests: XCTestCase {
                         deliveryDate: 2,
                         delivery: [
                             .init(
-                                deliveryId: .slovenskaPosta,
+                                deliveryId: "SLOVENSKA_POSTA",
                                 deliveryPrice: "3",
                                 deliveryPriceCod: "5"
                             ),
                             .init(
-                                deliveryId: .ppl,
+                                deliveryId: "PPL",
                                 deliveryPrice: "3",
                                 deliveryPriceCod: "5"
                             )
@@ -99,12 +99,12 @@ final class HeurekaXMLFeedTests: XCTestCase {
                         deliveryDate: 2,
                         delivery: [
                             .init(
-                                deliveryId: .slovenskaPosta,
+                                deliveryId: "SLOVENSKA_POSTA",
                                 deliveryPrice: "3",
                                 deliveryPriceCod: "5"
                             ),
                             .init(
-                                deliveryId: .ppl,
+                                deliveryId: "PPL",
                                 deliveryPrice: "3",
                                 deliveryPriceCod: "5"
                             )
