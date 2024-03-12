@@ -1,5 +1,5 @@
 import XCTest
-@testable import HeurekaXMLFeed
+@testable import HeurekaXMLSwift
 
 final class HeurekaXMLFeedTests: XCTestCase {
     
