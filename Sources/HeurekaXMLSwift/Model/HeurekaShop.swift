@@ -289,6 +289,14 @@ public struct Param : Codable, Equatable {
         case paramName = "PARAM_NAME"
         case val = "VAL"
     }
+    
+    public init(
+        paramName: String,
+        val: String
+    ){
+        self.paramName = paramName
+        self.val = val
+    }
 }
 
 public struct Delivery : Codable, Equatable {
@@ -300,6 +308,16 @@ public struct Delivery : Codable, Equatable {
         case deliveryId = "DELIVERY_ID"
         case deliveryPrice = "DELIVERY_PRICE"
         case deliveryPriceCod = "DELIVERY_PRICE_COD"
+    }
+    
+    public init(
+        deliveryId: String,
+        deliveryPrice: String,
+        deliveryPriceCod: String
+    ){
+        self.deliveryId = deliveryId
+        self.deliveryPrice = deliveryPrice
+        self.deliveryPriceCod = deliveryPriceCod
     }
 }
 
